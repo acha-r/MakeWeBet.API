@@ -27,3 +27,8 @@ C#, .NET 7.0
 ## Database design
 The database design diagram is provided in the repo. Here is a link for a quick peek
 https://shorturl.at/jpGQ6
+
+## Tests
+To test the services, 
+* Open package manager console in Visual studio
+* Type "dotnet test*

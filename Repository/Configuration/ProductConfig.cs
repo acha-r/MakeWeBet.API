@@ -16,7 +16,7 @@ namespace Repository.Configuration
                         Name = "Gummies",
                         Price = 1200,
                         StoreId = 1,
-                        ProductBarcCode = Guid.NewGuid().ToString()
+                        ProductBarCode = Guid.NewGuid().ToString()
                     },
                     new Product
                     {
@@ -24,7 +24,7 @@ namespace Repository.Configuration
                         Name = "Yogurt",
                         Price = 1500,
                         StoreId = 2,
-                        ProductBarcCode = Guid.NewGuid().ToString()
+                        ProductBarCode = Guid.NewGuid().ToString()
                     },
                     new Product
                     {
@@ -32,7 +32,7 @@ namespace Repository.Configuration
                         Name = "Orbit",
                         Price = 400,
                         StoreId = 1,
-                        ProductBarcCode = Guid.NewGuid().ToString()
+                        ProductBarCode = Guid.NewGuid().ToString()
                     },
                     new Product
                     {
@@ -40,7 +40,7 @@ namespace Repository.Configuration
                         Name = "Malt",
                         Price = 800,
                         StoreId = 3,
-                        ProductBarcCode = Guid.NewGuid().ToString()
+                        ProductBarCode = Guid.NewGuid().ToString()
                     },
                     new Product
                     {
@@ -48,7 +48,7 @@ namespace Repository.Configuration
                         Name = "Coke",
                         Price = 300,
                         StoreId = 2,
-                        ProductBarcCode = Guid.NewGuid().ToString()
+                        ProductBarCode = Guid.NewGuid().ToString()
                     },
                     new Product
                     {
@@ -56,7 +56,7 @@ namespace Repository.Configuration
                         Name = "Yogurt",
                         Price = 1200,
                         StoreId = 3,
-                        ProductBarcCode = Guid.NewGuid().ToString()
+                        ProductBarCode = Guid.NewGuid().ToString()
                     },
                      new Product
                      {
@@ -64,7 +64,7 @@ namespace Repository.Configuration
                          Name = "Life",
                          Price = 50000,
                          StoreId = 0,
-                         ProductBarcCode = ""
+                         ProductBarCode = ""
                      },
                       new Product
                       {
@@ -72,7 +72,7 @@ namespace Repository.Configuration
                           Name = "Cofee",
                           Price = 120,
                           StoreId = 0,
-                          ProductBarcCode = ""
+                          ProductBarCode = ""
                       }
 
 

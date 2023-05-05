@@ -19,7 +19,7 @@ namespace Presentation.Controllers
 
         [Route("barcode")]
         [HttpGet]
-        public IActionResult GetBarcodeInfo(int customerId)
+        public IActionResult GetUserBarcodeInfo(int customerId)
         {
             var userDetail = _service.CustomerService.GetBarcodeInfo(customerId, trackChanges: false);
 

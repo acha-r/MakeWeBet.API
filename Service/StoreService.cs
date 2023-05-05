@@ -40,19 +40,16 @@ namespace Service
     
         public ScanProductDto RegisterProduct(int productId, bool trackChanges)
         {
-            var product = _repository.Product.GetProductInfo(productId, false);
+            var product = _repository.Product.GetProductInfo(productId, false) ?? throw new ArgumentNullException("Product not found");
 
-            if (product == null)
-                return null;
-
-            product.ProductBarcCode = Guid.NewGuid().ToString();
+            product.ProductBarCode = Guid.NewGuid().ToString();
             _repository.Save();
 
             return new ScanProductDto
             {
                 Name = product.Name,
                 Price = product.Price,
-                ProductBarcCode = product.ProductBarcCode,
+                ProductBarcCode = product.ProductBarCode,
                 StoreId = product.StoreId,
             };
         }

@@ -6,7 +6,7 @@ This contains API endpoints for possible transactions in the MakeWeBet app
 ### Customer
 * GetUserBarcodeInfo : This returns the user information - name, barcode unique id and wallet balance.
 
-* MakePayment : This returns a payment summary. If unsuccessful due to insufficient funds, it provides info on how much more the user would need to secue purchase.
+* MakePayment : This returns a payment summary. If unsuccessful due to insufficient funds, it provides information on how much more the user would need to secure purchase.
 
 ### Store
 * RegiterProduct : Registers product on MakeWeBet. The assigns a unique barcode Id to the product.

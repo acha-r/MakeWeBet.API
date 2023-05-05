@@ -34,7 +34,7 @@ namespace Service
             }
             catch (NullReferenceException ex)
             {
-                _logger.LogError($"No vex. E no work");
+                _logger.LogError($"No vex. E no work \nMessage: {ex.Message}");
                 throw;
             }
         }
@@ -50,34 +50,20 @@ namespace Service
                 {
                     Name = product.Name,
                     Price = product.Price,
-                    ProductBarcCode = " ",
+                    ProductBarCode = " ",
                     StoreId = product.StoreId
                 };
 
-                if (newProduct == null)
-                    throw new NullReferenceException();
-
-                var store = _repository.Store.GetStore(product.StoreId, false);
-                if (store == null)
-                    throw new Exception("Store not found.");
+                var store = _repository.Store.GetStore(product.StoreId, false) ?? throw new Exception("Store not found.");
 
                 _repository.Product.AddProduct(newProduct);
                 _repository.Save();
 
                 return product;
-            }
-            catch (ArgumentNullException ex)
-            {
-                _ = ex.Message;
-                throw;
-            }
-            catch (NullReferenceException ex)
-            {
-                _ = ex.Message; throw;
-            }
+            }           
             catch (Exception ex)
             {
-                _ = ex.Message; 
+                _logger.LogError($"No vex. E no work \nMessage: {ex.Message}");
                 throw;
             }
         }

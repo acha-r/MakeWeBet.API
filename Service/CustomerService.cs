@@ -38,7 +38,7 @@ namespace Service
                 var customer = _repository.Customer.GetCustomer(customerId, trackChanges) ?? throw new ArgumentException("");
                 var product = _repository.Product.GetProductInfo(productId, trackChanges) ?? throw new ArgumentException("");
                                
-                if (string.IsNullOrEmpty(product.ProductBarcCode))
+                if (string.IsNullOrEmpty(product.ProductBarCode))
                     throw new InvalidOperationException("");
 
 
@@ -70,9 +70,9 @@ namespace Service
                     Remark = "Carry go!"
                 });
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                _logger.LogError($"No vex. E no work");
+                _logger.LogError($"No vex. E no work \nMessage: {ex.Message}");
                 throw;
             }
         }

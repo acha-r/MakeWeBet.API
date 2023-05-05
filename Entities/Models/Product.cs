@@ -11,7 +11,7 @@ namespace Entities.Models
         [MaxLength(60, ErrorMessage = "Maximum length for the Name is 60 characters.")]
         public string Name { get; set; }
 
-        public string ProductBarcCode { get; set; }
+        public string ProductBarCode { get; set; }
 
         [Required(ErrorMessage = "Price is a required field.")]
         [Column(TypeName = "money")]

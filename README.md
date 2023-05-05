@@ -31,4 +31,5 @@ https://shorturl.at/jpGQ6
 ## Tests
 To test the services, 
 * Open package manager console in Visual studio
-* Type "dotnet test*
+* Type "dotnet test"
+* Press enter

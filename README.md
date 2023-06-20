@@ -1,7 +1,6 @@
 # MakeWeBetAPI
-
-This contains API endpoints for possible transactions in the MakeWeBet app
-
+ MakeWeBet is a cutting-edge e-commerce platform designed to provide a seamless shopping experience for registered users. This API enables secure communication between the app and the server, facilitating essential actions and access to crucial information.
+ 
 ## Features
 ### Customer
 * GetUserBarcodeInfo : This returns the user information - name, barcode unique id and wallet balance.
